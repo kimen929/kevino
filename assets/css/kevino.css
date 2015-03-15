@@ -252,16 +252,18 @@ pre {
   padding: 2em 0 0 0;
   border-top: 2px solid #DDDDDD;
   font-size: 1em;
-  color: #666666; }
+  color: #949494; }
 
 .footer__copyright {
   display: block;
   margin-bottom: .7em; }
   .footer__copyright a {
-    color: #a6a6a6;
+    color: #13626C;
     text-decoration: underline; }
     .footer__copyright a:hover {
       color: #77CDBC; }
+    .footer__copyright a.creative-commons-image {
+        opacity: .5; }
 
 .avatar,
 .logo {
@@ -1489,3 +1491,5 @@ nav.pagination span.page-number {
 nav.pagination span.page-number b {
   color: #2d343a;
 }
+
+
