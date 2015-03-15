@@ -1,0 +1,27 @@
+{{!< default}}
+
+  <h1 class="archive-title">Tag: {{tag.name}}</h1>
+
+  <hr class="section-title__divider" />
+
+  <div class="main-post-list">
+
+    <ol class="post-list">
+      {{#foreach posts}}
+      <li>
+      <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if               tags}}<span class="post-tags">on {{tags}}</span>{{/if}}</span>
+        <h1 class="post-list__post-title post-title"><a href="{{url}}" title="link to {{{title}}}">{{{title}}}</a></h1>
+        <p class="excerpt">
+            {{excerpt characters="350"}}&hellip;
+        </p>
+        <div class="readmore">
+            <a href={{url}} title="Continue Reading Default Content Styles" >继续阅读</a>
+        </div>
+      </li>
+
+      {{/foreach}}
+    </ol>
+
+    {{pagination}}
+
+  </div>
